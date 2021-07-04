@@ -1,0 +1,89 @@
+---
+layout: blank
+title: Register
+customJs:
+- validation.custom.js
+---
+<div class="container-fluid">
+    <div class="wrapper vh-100">
+      <div class="row align-items-center h-100">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="card card-body p-5">
+            <form class="needs-validation" novalidate>
+              <div class="mb-4">
+                <a href="/"><img src="{{ site.baseurl }}/assets/images/next-full.png" alt="logo"></a>
+              </div>
+              <h3 class="fw-light mb-3">Create your Next Account</h3>
+              <div class="row g-2">
+                <div class="col-md mb-3">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" placeholder="firstname" required>
+                    <label for="floatingInputGrid">First name</label>
+                    <div class="invalid-feedback">
+                        Please provide a first name.
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGrid" placeholder="lastname" required>
+                      <label for="floatingInputGrid">Last name</label>
+                      <div class="invalid-feedback">
+                          Please provide a last name.
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                <label for="inputEmail">Username or email</label>
+                <div class="invalid-feedback">
+                  Please provide a valid username or email.
+                </div>
+              </div>
+  
+              <div class="row g-2">
+                <div class="col-md mb-3">
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingInputGrid" placeholder="Password" required>
+                    <label for="floatingInputGrid">Password</label>
+                    <div class="invalid-feedback">
+                        Please provide a valid Password.
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingInputGrid" placeholder="Confirm password" required>
+                      <label for="floatingInputGrid">Confirm Password</label>
+                      <div class="invalid-feedback">
+                          Confirm Your password
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                <label class="form-check-label" for="flexCheckChecked">
+                  I accept all the terms & conditions
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-shadow btn-lg px-5 mb-3">Login</button>
+              <div class="mb-3">
+                <a href="#" class="fw-bold text-dark">
+                    Forgot Password
+                  </a>
+              </div>
+              <div>
+                  <a href="{{ site.baseurl }}/html/login.html" class="text-link">
+                    Sign in instead ?
+                  </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

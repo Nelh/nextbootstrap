@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Next</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/vendor/perfect-scrollbar.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/next.css">
+    {% if page.customCSS %}{% for customCSSFile in page.customCSS %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ customCSSFile }}">
+    {% endfor %}{% endif %}
+</head>
+    
+<body class="app">
+    {% include _sidebar.html %}
+    <div class="container-wide">
+        {% include _navbar.html %}
+        {{ content }}
+    </div>
+    
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>  
+    <script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>  
+    <script src="{{ site.baseurl }}/assets/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/sidebar.js"></script>
+    {% if page.customJs %}{% for customJsFile in page.customJs %}
+    <script src="{{ site.baseurl }}/assets/js/{{ customJsFile }}"></script>
+    {% endfor %}{% endif %}
+</body>
+</html>

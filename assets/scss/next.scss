@@ -1,0 +1,23 @@
+// Import Next Sidebar lib 
+@import "../../node_modules/next-sidebar/assets/scss/next-sidebar";
+
+@import 'utilities/variables';
+@import "utilities/boostrap-theme";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "utilities/bootstrap-overwrite";
+
+// @import Bootstrap lib
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons";
+
+@import 'utilities/base';
+@import 'utilities/print';
+
+@import 'helpers/mixins';
+
+@import 'custom';

@@ -1,0 +1,217 @@
+---
+layout: default
+title: Tables
+
+customJs:
+
+- vendor/jquery.dataTables.min.js 
+- vendor/dataTables.bootstrap5.min.js
+
+- script.js
+
+customCSS:
+- vendor/dataTables.bootstrap5.min.css
+---
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4 class="fw-bold">DataTable Basic example</h4>
+                    <div class="table-responsive">
+                        <table class="table datatable mb-0">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                      <h4 class="fw-bold">Datatable Project List</h4>
+                      <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+                  </div>
+                  <table class="table table-hover datatable">
+                    <thead class="table-light">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Project</th>
+                        <th>Date</th>
+                        <th class="text-end">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>3224</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Chris <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>Software Developer<br /><span class="small text-muted">Project: <strong>BMW AI Remote</strong></span></td>
+                        <td>Apr 24, 2019</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3218</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Arthur <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>Software Developer<br /><span class="small text-muted">Project: <strong>Slack Bot</strong></span></td>
+                        <td>May 23, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2651</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Daniel <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>Operation Manager<br /><span class="small text-muted">Project: <strong>BMW AI Remote, Slack Bot,...</strong></span></td>
+                        <td>Nov 4, 2019</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2636</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/2.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Nat Hurt 
+                        </th>
+                        <td>Software Developer<br /><span class="small text-muted">Project: <strong>BMW AI Remote</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2757</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/3.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Lea mari <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>Software Developer<br /><span class="small text-muted">Project: <strong>BMW AI Remote</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2757</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/7.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Ruben 
+                        </th>
+                        <td>DevOps Engineer<br /><span class="small text-muted">Project: <strong>Slack Bot</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2757</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/3.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Lea mari <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>UI/UX Designer<br /><span class="small text-muted">Project: <strong>Slack Bot</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2757</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/8.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Nathalie 
+                        </th>
+                        <td>UI Designer<br /><span class="small text-muted">Project: <strong>Slack Bot</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2757</td>
+                        <th scope="col">
+                            <span class="avatar-sm">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/9.jpg" alt="..." class="img-fluid rounded-circle">
+                            </span>
+                            Simone Kat <i class="bi bi-patch-check-fill text-secondary"></i>
+                        </th>
+                        <td>Project Manager<br /><span class="small text-muted">Project: <strong>Slack Bot</strong></span></td>
+                        <td>Jan 13, 2020</td>
+                        <td class="text-end">
+                          <a href="#!" class="btn btn-light"><i class="bi bi-pencil-square mr-2"></i></a>
+                          <a href="#!" class="btn btn-light"><i class="bi bi-trash"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div> 
+        </div>
+    </div>
+</div> 

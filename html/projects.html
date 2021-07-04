@@ -1,0 +1,367 @@
+---
+layout: default
+title: Projects
+customJs:
+- vendor/sortable.js
+- vendor/jquery-sortable.js
+- sortable.custom.js
+---
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xxl-6 ol-xl-4 col-md-6 col-14">
+      <div class="card card-body p-2 px-3">
+        <div class="btn-toolbar justify-content-between" role="toolbar">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <a href="{{ site.baseurl }}/html/project-new.html" class="btn btn-primary btn-shadow py-2 px-4 mb-3"><i class="bi bi-folder-plus"></i> Add Project</a>
+          </div>
+          <div class="btn-toolbar">
+            <div class="btn-group me-2 d-none d-xl-inline" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-primary"><i class="bi bi-arrow-clockwise"></i> <span class="d-none d-xl-inline">Sync</span></button>
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-sort-up"></i> <span class="d-none d-xl-inline">Filter</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Progress</a></li>
+                  <li><a class="dropdown-item" href="#">Completed</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-group d-inline" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-secondary"><i class="bi bi-grid"></i></button>
+              <button type="button" class="btn btn-secondary"><i class="bi bi-card-list"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-6 ol-xl-4 col-md-6 col-14 mb-3">
+      <div class="card card-body p-1">
+        <div class="input-group imput-group-lg">
+          <span class="input-group-text bg-transparent border-0"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control border-0" placeholder="Search Project...">
+          <span class="input-group-text bg-transparent border-0"><i class="bi bi-map"></i></span>
+          <input type="text" class="form-control border-0" placeholder="Location">
+          <span class="input-group-text border-0 bg-transparent">
+            <button class="btn btn-primary btn-shadow py-2 px-4">Search</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-2 sortable">
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card bg-warning-lighten">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg role="img" fill="#4A154B" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Slack</title><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">Slack Bot</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">12</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">125</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">25%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/2.jpg" alt="participant">
+						<a href="#!" class="ms-2 fw-bold text-primary small"><span>+ 7 more</span></a>
+					  </div>
+          <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Uber</title><path d="M0 7.97v4.958c0 1.867 1.302 3.101 3 3.101.826 0 1.562-.316 2.094-.87v.736H6.27V7.97H5.082v4.888c0 1.257-.85 2.106-1.947 2.106-1.11 0-1.946-.827-1.946-2.106V7.971H0zm7.44 0v7.925h1.13v-.725c.521.532 1.257.86 2.06.86a3.006 3.006 0 0 0 3.034-3.01 3.01 3.01 0 0 0-3.033-3.024 2.86 2.86 0 0 0-2.049.861V7.971H7.439zm9.869 2.038c-1.687 0-2.965 1.37-2.965 3 0 1.72 1.334 3.01 3.066 3.01 1.053 0 1.913-.463 2.49-1.233l-.826-.611c-.43.577-.996.847-1.664.847-.973 0-1.753-.7-1.912-1.64h4.697v-.373c0-1.72-1.222-3-2.886-3zm6.295.068c-.634 0-1.098.294-1.381.758v-.713h-1.131v5.774h1.142V12.61c0-.894.544-1.47 1.291-1.47H24v-1.065h-.396zm-6.319.928c.85 0 1.564.588 1.756 1.47H15.52c.203-.882.916-1.47 1.765-1.47zm-6.732.012c1.086 0 1.98.883 1.98 2.004a1.993 1.993 0 0 1-1.98 2.001A1.989 1.989 0 0 1 8.56 13.02a1.99 1.99 0 0 1 1.992-2.004z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">Uber RIde</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">9</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">625</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">65%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/4.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/9.jpg" alt="participant">
+						<a href="#!" class="ms-2 fw-bold text-primary small"><span>+ 13 more</span></a>
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg role="img" fill="#0066B1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>BMW</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 .78C18.196.78 23.219 5.803 23.219 12c0 6.196-5.022 11.219-11.219 11.219C5.803 23.219.781 18.196.781 12S5.804.78 12 .78zm-.678.63c-.33.014-.66.042-.992.078l-.107 2.944a9.95 9.95 0 0 1 .71-.094l.07-1.988-.013-.137.043.13.664 1.489h.606l.664-1.488.04-.131-.01.137.07 1.988c.232.022.473.054.71.094l-.109-2.944a14.746 14.746 0 0 0-.992-.078l-.653 1.625-.023.12-.023-.12-.655-1.625zm6.696 1.824l-1.543 2.428c.195.15.452.371.617.522l1.453-.754.092-.069-.069.094-.752 1.453c.163.175.398.458.53.63l2.43-1.544a16.135 16.135 0 0 0-.46-.568L18.777 6.44l-.105.092.078-.115.68-1.356-.48-.48-1.356.68-.115.078.091-.106 1.018-1.539c-.18-.152-.351-.291-.57-.46zM5.5 3.785c-.36.037-.638.283-1.393 1.125a18.97 18.97 0 0 0-.757.914l2.074 1.967c.687-.76.966-1.042 1.508-1.613.383-.405.6-.87.216-1.317-.208-.242-.558-.295-.85-.175l-.028.01.01-.026a.7.7 0 0 0-.243-.734.724.724 0 0 0-.537-.15zm.006.615c.136-.037.277.06.308.2.032.14-.056.272-.154.382-.22.25-1.031 1.098-1.031 1.098l-.402-.383c.417-.51.861-.974 1.062-1.158a.55.55 0 0 1 .217-.139zM12 4.883a7.114 7.114 0 0 0-7.08 6.388v.002a7.122 7.122 0 0 0 8.516 7.697 7.112 7.112 0 0 0 5.68-6.97A7.122 7.122 0 0 0 12 4.885v-.002zm-5.537.242c.047 0 .096.013.14.043.088.059.128.16.106.26-.026.119-.125.231-.205.318l-1.045 1.12-.42-.4s.787-.832 1.045-1.099c.102-.106.168-.17.238-.205a.331.331 0 0 1 .14-.037zM12 5.818A6.175 6.175 0 0 1 18.182 12H12v6.182A6.175 6.175 0 0 1 5.818 12H12V5.818Z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">BMW AI Remote</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">10</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">125</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">15%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/15.jpg" alt="participant">
+						<a href="#!" class="ms-2 fw-bold text-primary small"><span>+ 5 more</span></a>
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Apple</title><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+              <svg fill="#FA243C" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Apple Music</title><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">Apple Music AR</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">3</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">125</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">65%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/4.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/6.jpg" alt="participant">
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg fill="#00AEEF" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Barclays</title><path d="M21.043 3.629a3.235 3.235 0 0 0-1.048-.54 3.076 3.076 0 0 0-.937-.144h-.046c-.413.006-1.184.105-1.701.71a1.138 1.138 0 0 0-.226 1.023.9.9 0 0 0 .555.63s.088.032.228.058c-.04.078-.136.214-.136.214-.179.265-.576.612-1.668.612h-.063c-.578-.038-1.056-.189-1.616-.915-.347-.45-.523-1.207-.549-2.452-.022-.624-.107-1.165-.256-1.6-.1-.29-.333-.596-.557-.742a2.55 2.55 0 0 0-.694-.336c-.373-.12-.848-.14-1.204-.146-.462-.01-.717.096-.878.292-.027.033-.032.05-.068.046-.084-.006-.272-.006-.328-.006-.264 0-.498.043-.721.09-.47.1-.761.295-1.019.503-.12.095-.347.365-.399.653a.76.76 0 0 0 .097.578c.14-.148.374-.264.816-.266.493-.002 1.169.224 1.406.608.336.547.27.99.199 1.517-.183 1.347-.68 2.048-1.783 2.203-.191.026-.38.04-.56.04-.776 0-1.34-.248-1.63-.716a.71.71 0 0 1-.088-.168s.087-.021.163-.056c.294-.14.514-.344.594-.661.09-.353.004-.728-.23-1.007-.415-.47-.991-.708-1.713-.708-.4 0-.755.076-.982.14-.908.256-1.633.947-2.214 2.112-.412.824-.7 1.912-.81 3.067-.11 1.13-.056 2.085.019 2.949.124 1.437.363 2.298.708 3.22a15.68 15.68 0 0 0 1.609 3.19c.09-.094.15-.161.308-.318.188-.19.724-.893.876-1.11.19-.27.51-.779.664-1.147l.15.119c.16.127.252.348.249.592-.003.215-.053.464-.184.922a8.703 8.703 0 0 1-.784 1.818c-.189.341-.27.508-.199.584.015.015.038.03.06.026.116 0 .34-.117.585-.304.222-.17.813-.672 1.527-1.675a15.449 15.449 0 0 0 1.452-2.521c.12.046.255.101.317.226a.92.92 0 0 1 .08.563c-.065.539-.379 1.353-.63 1.94-.425.998-1.208 2.115-1.788 2.877-.022.03-.163.197-.186.227.9.792 1.944 1.555 3.007 2.136.725.408 2.203 1.162 3.183 1.424.98-.262 2.458-1.016 3.184-1.424a17.063 17.063 0 0 0 3.003-2.134c-.05-.076-.13-.158-.183-.23-.582-.763-1.365-1.881-1.79-2.875-.25-.59-.563-1.405-.628-1.94-.028-.221-.002-.417.08-.565.033-.098.274-.218.317-.226.405.884.887 1.73 1.452 2.522.715 1.003 1.306 1.506 1.527 1.674.248.191.467.304.586.304a.07.07 0 0 0 .044-.012c.094-.069.017-.234-.183-.594a9.003 9.003 0 0 1-.786-1.822c-.13-.456-.18-.706-.182-.92-.004-.246.088-.466.248-.594l.15-.118c.155.373.5.919.665 1.147.15.216.685.919.876 1.11.156.158.22.222.308.32a15.672 15.672 0 0 0 1.609-3.19c.343-.923.583-1.784.707-3.222.075-.86.128-1.81.02-2.948-.101-1.116-.404-2.264-.81-3.068-.249-.49-.605-1.112-1.171-1.566z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">Barclays Personal Banking</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">10</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">125</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">15%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/15.jpg" alt="participant">
+						<a href="#!" class="ms-2 fw-bold text-primary small"><span>+ 5 more</span></a>
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Land Rover</title><path d="M10.182 11.491h.717l.625-1.85.365 1.85h.718l.978-2.858-.75.001-.522 1.554-.299-1.554h-1.01l-.025.074.05.048c.053.053.05.114.005.246l-.852 2.489zm3.749-2.489l-.853 2.49h1.259c.54 0 .847-.12 1.098-.387.313-.332.6-1.195.59-1.67-.009-.485-.322-.8-.98-.8H13.9l-.024.073.05.048c.052.053.05.114.004.246m.685.31h.313c.213 0 .33.071.333.236.002.106-.027.252-.137.565-.098.28-.176.443-.287.562-.088.094-.207.135-.478.135h-.261l.517-1.498zm4.066.347H16.78l-.247.68h1.318l-1.497.509-.093.243 2.157-.71.264-.722zM5.043 11.492h1.95l.236-.682H6.095l.75-2.176h-.979l-.024.074.049.048c.053.053.051.114.005.246l-.853 2.49zm2.153-.001h.83l.359-.632h.859l.008.632h.753l-.162-2.857H8.716l-.025.074.036.036c.06.058.035.142-.184.49l-1.347 2.257zm1.996-2.067h.026l.014.864h-.527l.487-.864zM8.01 12.11H6.776l-.025.074.05.05c.053.051.05.113.004.245l-.862 2.49h.788l.337-.989h.267l.296.988h.792l-.372-1.01a.76.76 0 0 0 .433-.194c.149-.136.252-.326.337-.607.124-.407.049-.64-.031-.76-.11-.164-.342-.287-.78-.287m.068 1.038c-.05.122-.104.151-.175.18a.845.845 0 0 1-.245.026H7.28l.205-.591h.455c.136 0 .192.07.194.152a.759.759 0 0 1-.057.233m10.436-1.038H17.28l-.024.074.05.05c.053.051.05.113.005.245l-.863 2.49h.789l.336-.988h.267l.297.987h.79l-.37-1.01a.758.758 0 0 0 .431-.194c.15-.136.253-.326.338-.607.124-.407.05-.64-.03-.76-.11-.164-.343-.287-.782-.287m.069 1.038c-.05.122-.104.151-.174.18a.849.849 0 0 1-.245.026h-.376l.203-.591h.455c.136 0 .192.07.193.152a.747.747 0 0 1-.056.233m1.367-4.742c-2.365-1.222-5.31-1.69-7.95-1.69s-5.585.468-7.95 1.69C2.72 9.093 1.035 10.331 1.035 12c0 1.669 1.686 2.907 3.015 3.594 2.365 1.222 5.31 1.69 7.95 1.69 2.64 0 5.585-.467 7.95-1.69 1.329-.687 3.015-1.925 3.015-3.594 0-1.67-1.685-2.907-3.015-3.594m-.12 6.954c-2.33 1.203-5.227 1.66-7.83 1.66-2.603 0-5.5-.457-7.83-1.66C2.939 14.721 1.3 13.546 1.3 12c0-1.548 1.638-2.722 2.87-3.359C6.5 7.438 9.398 6.981 12 6.981c2.603 0 5.5.456 7.83 1.66 1.233.637 2.87 1.81 2.87 3.36 0 1.547-1.638 2.721-2.87 3.359m.595-7.873C18.171 6.322 15.18 5.681 12 5.681c-3.179 0-6.17.641-8.425 1.806C2.24 8.177 0 9.681 0 12s2.24 3.823 3.575 4.513C5.829 17.678 8.821 18.32 12 18.32c3.18 0 6.171-.641 8.425-1.806C21.76 15.823 24 14.32 24 12c0-2.32-2.24-3.823-3.575-4.513m-.293 8.46C17.967 17.064 15.08 17.68 12 17.68s-5.966-.616-8.132-1.735C1.786 14.87.638 13.468.638 12c0-1.469 1.148-2.87 3.23-3.946C6.034 6.936 8.921 6.32 12 6.32c3.08 0 5.967.617 8.132 1.735 2.083 1.075 3.23 2.477 3.23 3.946 0 1.468-1.147 2.87-3.23 3.946m-9.41-3.87h-.091c-.539 0-.846.144-1.099.412-.314.333-.609 1.23-.603 1.706.006.484.32.82.978.82h.096c.54 0 .848-.145 1.1-.413.314-.333.603-1.23.597-1.706-.006-.484-.32-.82-.979-.82m.046 1.515c-.098.281-.175.462-.288.581-.09.094-.207.161-.48.161-.212 0-.33-.087-.33-.251-.002-.107.027-.268.141-.582.098-.28.175-.462.289-.581.088-.094.207-.161.478-.161.213 0 .331.087.33.25.003.108-.026.27-.14.583M6.035 12.48l-2.157.709-.263.723h1.902l.248-.681H4.446l1.497-.507.092-.244zm7.846-.369l-1.046 2.055h-.022l-.053-2.055h-.875l-.034.074.075.046c.073.051.093.103.102.246l.119 2.492h.975l1.573-2.858h-.814zm2.396 1.712l.219-.597H15.49l.156-.457h1.088l.24-.66H14.92l-.029.084.05.049c.053.051.05.112.004.246l-.855 2.48h1.92l.232-.663h-1.12l.164-.482h.991z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold">LR Access Remote</h5>
+            <p class="text-muted small p-0">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">3</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">125</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">65%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/4.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/6.jpg" alt="participant">
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card bg-danger-light">
+        <div class="card-body p-3">
+          <div class="d-flex justify-content-between mb-3">
+            <p class="m-0 small text-muted">Jan 15, 2021</p>
+            <button class="btn btn-link text-primary p-0"><i class="fal fa-ellipsis-v-alt"></i></button>
+          </div>
+          <div>
+            <div class="card-avatar bg-transparent">
+              <svg fill="#E4405F" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </div>
+          </div>
+          <div class="my-2">
+            <h5 class="fw-bold text-danger">Instagram AI Assistant</h5>
+            <p class="text-muted small p-0  text-primary">App design and development</p>
+            <p>With supporting text below as a natural lead-in to additional contenposuere erat a ante... <a href="#!">view more</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p><a href="#!"><i class="bi bi-list-stars mt-1"></i><span class="fw-bold px-2">5</span>Tasks</a></p>
+            <p><a href="#!"><i class="bi bi-chat-right-text mt-1"></i><span class="fw-bold px-2">25</span>Comments</a></p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <p class="fw-bold">Progress</p>
+            <p class="fw-bold">35%</p>
+          </div>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+					<div class="participants">
+						<img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/13.jpg" alt="participant">
+						<img src="{{ site.baseurl }}/assets/images/profiles/12.jpg" alt="participant">
+					  </div>
+            <a href="{{ site.baseurl }}/html/project-details.html" class="fw-bold text-primary">Project <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xxl-3 col-xl-4 col-md-6 col-12 mb-4">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column justify-content-center text-center">
+          <a href="javascript:;" class="text-primary">
+            <i class="bi bi-plus-circle-dotted bi-5x"></i>
+            <h5 class="fw-bold">New project</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

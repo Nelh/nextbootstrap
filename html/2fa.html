@@ -1,0 +1,41 @@
+---
+layout: blank
+title: 2FA
+customJs:
+- validation.custom.js
+- 2fa.js
+---
+
+<div class="container-fluid">
+    <div class="wrapper vh-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="mx-auto" style="width:370px">
+                    <div class="mb-4 text-center">
+                      <a href="/"><img src="{{ site.baseurl }}/assets/images/next-full.png" alt="logo"></a>
+                    </div>
+                    <h3 class="fw-light text-center mb-3">2-Step Verification</h3>
+                    <form id="formsubmit" class="needs-validation" novalidate>
+                        <div class="mb-4 mx-4 text-center text-muted">
+                            Enter 6-digit code from your two factor authentication APP
+                        </div>
+
+                        <div class="digits d-flex my-4">
+                            <input class="form-control me-2" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" autofocus required/>
+                            <input class="form-control me-2" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" required/>
+                            <input class="form-control me-2" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" required/>
+                            <input class="form-control me-2" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" required/>
+                            <input class="form-control me-2" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" required/>
+                            <input class="form-control last" name="digit[]" type="text" size="1" maxlength="1" autocomplete="off" placeholder="_" required/>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary btn-shadow btn-lg w-100 mb-4">
+                            Verify
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,54 @@
+---
+layout: blank
+title: Login
+customJs:
+- validation.custom.js
+---
+<div class="container-fluid">
+  <div class="wrapper vh-100">
+    <div class="row align-items-center h-100">
+      <div class="col-lg-4 offset-lg-4">
+        <div class="mx-auto" style="width:370px">
+          <form class="needs-validation" novalidate>
+            <div class="mb-4 text-center">
+              <a href="/"><img src="{{ site.baseurl }}/assets/images/next-full.png" alt="logo"></a>
+            </div>
+            <h3 class="fw-light text-center mb-3">Sign in your Next Account</h3>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+              <label for="inputEmail">Username or email</label>
+              <div class="invalid-feedback">
+                Please provide a valid username or email.
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="inputPassword" placeholder="*********" required>
+              <label for="inputPassword">Password</label>
+              <div class="invalid-feedback">
+                Please provide a valid password.
+              </div>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+              <label class="form-check-label" for="flexCheckChecked">
+                Remember Me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-shadow btn-lg w-100 mb-3">Login</button>
+            <div class="mb-3">
+              <a href="#" class="fw-bold text-dark">
+                Forgot Password
+              </a>
+            </div>
+            <div class="mb-3">
+                <a href="{{ site.baseurl }}/html/register.html" class="text-link">
+                  Create Account ?
+                </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $colors-light);
+
+$modal-backdrop-bg: $default;
+$modal-backdrop-opacity: .95 !important;
+$nav-pills-link-active-bg: $default;
+
+// $input-focus-border-color: transparent;
+$input-focus-box-shadow: transparent;
+
+// Pagination default colors
+
+$pagination-color:                  $default;
+$pagination-bg:                     $white;
+$pagination-border-color:           $gray-300;
+
+$pagination-focus-color:            $white;
+$pagination-focus-bg:               $default;
+$pagination-focus-box-shadow:       $input-btn-focus-box-shadow;
+$pagination-focus-outline:          0;
+
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               $default;
+$pagination-hover-border-color:     $default;
+
+$pagination-active-color:           $component-active-color;
+$pagination-active-bg:              $default;
+$pagination-active-border-color:    $pagination-active-bg;
+
+// Button
+$btn-box-shadow:              0px 8px 15px rgba($default, 0.1);
+
+// Card
+
+$card-border-radius:                15px;
+$card-border-width:                 0;

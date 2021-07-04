@@ -1,0 +1,133 @@
+---
+layout: default
+title: Calendar
+customJs:
+- vendor/fullcalendar.js
+- fullcalendar.custom.js
+customCSS:
+- vendor/fullcalendar.min.css
+---
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-body py-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-auto">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#eventModal"><i class="bi bi-calendar-plus me-2"></i> New Event</button>
+                        </div>
+                        <div class="col-md-2 text-truncate pe-1 mt-2">
+                            <span class="small bi bi-calendar-check me-1 text-success d-block d-lg-inline"></span>
+                            <span class="small text-muted">9/10</span>
+                            <div class="progress mt-2" style="height: 4px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md text-truncate pe-0 mt-2">
+                            <strong>Current Sprint</strong>
+                            <p class="small text-muted mb-0">Going Live with All projects</p>
+                        </div>
+                        <div class="col-md-auto text-truncate pe-2 mt-2">
+                            <div class="participants">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+              </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div id='calendar'></div>
+                </div>
+            </div>
+            <!-- new event modal -->
+            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form class="needs-validation" novalidate>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="varyModalLabel">New Event</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4">
+                                <div class="p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-2 col-12 text-truncate pe-1 mt-2">
+                                            <span class="small bi-check-circle me-1 text-success d-block d-lg-inline"></span>
+                                            <span class="small text-muted">10/10</span>
+                                            <div class="progress mt-2" style="height: 4px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md col-12 text-truncate pe-0 mt-2">
+                                            <strong>Updated layouts structures</strong>
+                                            <p class="small text-muted mb-0">Completed a week ago</p>
+                                        </div>
+                                        <div class="col-md-auto text-truncate pe-2 mt-2">
+                                            <div class="participants">
+                                                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                                                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                                                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                  <input type="text" class="form-control" id="title" placeholder="title" required>
+                                  <label for="title">Title Event</label>
+                                  <div class="invalid-feedback">
+                                      Please provide a title for the event
+                                    </div>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="Add some note for your event" id="note" style="height: 100px"></textarea>
+                                    <label for="note">Add some note for your event</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="eventType">
+                                      <option selected>Open this select menu</option>
+                                      <option value="1">Work</option>
+                                      <option value="2">Home</option>
+                                    </select>
+                                    <label for="eventType">Event type</label>
+                                  </div>
+                                
+                                <div class="mb-3">
+                                    <label for="eventType" class="mb-2 text-muted">Start Date time</label>
+                                    <div class="input-group input-group-lg mb-3">
+                                        <input type="text" class="form-control" placeholder="01-02-2021" readonly>
+                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                        <input type="text" class="form-control" placeholder="-:--" readonly>
+                                        <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="eventType" class="mb-2 text-muted">End Date time</label>
+                                    <div class="input-group input-group-lg mb-3">
+                                        <input type="text" class="form-control" placeholder="01-02-2021" readonly>
+                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                        <input type="text" class="form-control" placeholder="-:--" readonly>
+                                        <span class="input-group-text"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between">
+                                <button type="submit" class="btn mb-2 btn-primary">Save Event</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- new event modal -->
+        </div> <!-- .col-12 -->
+    </div> <!-- .row -->
+</div> <!-- .container-fluid -->

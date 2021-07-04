@@ -1,0 +1,231 @@
+---
+layout: default
+title: Buttons
+---
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Examples</h4>
+                    <p class="card-title-desc">Bootstrap includes six predefined button styles, each serving its own semantic purpose.</p>
+                    <div class="button-items">
+                        <button type="button" class="btn mb-1 btn-primary">Primary</button>
+                        <button type="button" class="btn mb-1 btn-secondary">Secondary</button>
+                        <button type="button" class="btn mb-1 btn-success">Success</button>
+                        <button type="button" class="btn mb-1 btn-info">Info</button>
+                        <button type="button" class="btn mb-1 btn-warning">Warning</button>
+                        <button type="button" class="btn mb-1 btn-danger">Danger</button>
+                        <button type="button" class="btn mb-1 btn-light">Light</button>
+                        <button type="button" class="btn mb-1 btn-dark">Dark</button>
+                        <button type="button" class="btn mb-1 btn-link">Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Outline buttons</h4>
+                    <p class="card-title-desc">In need of a button, but not the hefty
+                        background colors they bring? Replace the default modifier classes with
+                        the <code>.btn-outline-*</code> ones to remove
+                        all background images and colors on any button.</p>
+                    <div class="button-items">
+                        <button type="button" class="btn mb-1 btn-outline-primary">Primary</button>
+                        <button type="button" class="btn mb-1 btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn mb-1 btn-outline-success">Success</button>
+                        <button type="button" class="btn mb-1 btn-outline-info">Info</button>
+                        <button type="button" class="btn mb-1 btn-outline-warning">Warning</button>
+                        <button type="button" class="btn mb-1 btn-outline-danger">Danger</button>
+                        <button type="button" class="btn mb-1 btn-outline-dark">Dark</button>
+                        <button type="button" class="btn mb-1 btn-outline-light">Light</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Button tags</h4>
+                    <p class="card-title-desc">The <code>.btn</code>
+                        classes are designed to be used with the <code>&lt;button&gt;</code> element.
+                        However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though
+                        some browsers may apply a slightly different rendering).</p>
+
+                    <div class="button-items">
+                        <a class="btn mb-1 btn-success" href="#" role="button">Link</a>
+                        <button class="btn mb-1 btn-primary" type="submit">Button</button>
+                        <input class="btn mb-1 btn-info" type="button" value="Input">
+                        <input class="btn mb-1 btn-warning" type="submit" value="Submit">
+                        <input class="btn mb-1 btn-danger" type="reset" value="Reset">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Sizes</h4>
+                    <p class="card-title-desc">Fancy larger or smaller buttons? Add
+                        <code>.btn-lg</code> or <code
+                               >.btn-sm</code> for additional sizes.
+                    </p>
+
+                    <div class="button-items">
+                        <button type="button" class="btn mb-1 btn-info btn-lg">Large button</button>
+                        <button type="button" class="btn mb-1 btn-secondary btn-lg">Large button</button>
+                        <button type="button" class="btn mb-1 btn-info btn-sm">Small button</button>
+                        <button type="button" class="btn mb-1 btn-secondary btn-sm">Small button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Block Buttons</h4>
+                    <p class="card-title-desc">Create block level buttons—those that
+                        span the full width of a parent—by adding <code
+                               >.btn-block</code>.</p>
+
+                    <div class="button-items">
+                        <button type="button" class="btn mb-1 btn-primary btn-lg btn-block">Block level button</button>
+                        <button type="button" class="btn mb-1 btn-secondary btn-sm btn-block">Block level button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Toggle states</h4>
+                    <p class="card-title-desc">Add <code>data-bs-toggle="button"</code>
+                        to toggle a button’s <code>active</code>
+                        state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class
+                        <strong>and</strong> <code>aria-pressed="true"</code> to the
+                        <code>&lt;button&gt;</code>.
+                    </p>
+
+                    <div class="button-items">
+                        <button type="button" class="btn mb-1 btn-primary" data-bs-toggle="button" aria-pressed="false">
+                            Single toggle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Checkbox buttons</h4>
+                    <p class="card-title-desc">Bootstrap’s <code
+                           >.button</code> styles can be applied to
+                        other elements, such as <code>
+                            &lt;label&gt;</code>s, to provide checkbox or radio style button
+                        toggling. Add <code>data-bs-toggle="buttons"</code> to a
+                        <code>.btn-group</code> containing those
+                        modified buttons to enable toggling in their respective styles.</p>
+
+                    <div>
+                        <div>
+                            <div class="btn-group btn-group-toggle" data-bs-toggle="buttons">
+                                <label class="btn mb-1 btn-info active">
+                                    <input type="checkbox" checked> Active
+                                </label>
+                                <label class="btn mb-1 btn-info">
+                                    <input type="checkbox"> Check
+                                </label>
+                                <label class="btn mb-1 btn-info">
+                                    <input type="checkbox"> Check
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <div class="btn-group btn-group-toggle" data-bs-toggle="buttons">
+                                <label class="btn mb-1 btn-secondary active">
+                                    <input type="checkbox" checked> <i class="mdi mdi-microphone"></i> Singing
+                                </label>
+                                <label class="btn mb-1 btn-secondary">
+                                    <input type="checkbox"> <i class="mdi mdi-book-open"></i> Reading
+                                </label>
+                                <label class="btn mb-1 btn-secondary">
+                                    <input type="checkbox"> <i class="mdi mdi-gamepad-variant-outline"></i> Playing
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Radio buttons</h4>
+                    <p class="card-title-desc">Bootstrap’s <code
+                           >.button</code> styles can be applied to
+                        other elements, such as <code>
+                            &lt;label&gt;</code>s, to provide checkbox or radio style button
+                        toggling. Add <code
+                               >data-bs-toggle="buttons"</code> to a
+                        <code>.btn-group</code> containing those
+                        modified buttons to enable toggling in their respective styles.</p>
+
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="btn-group btn-group-toggle" data-bs-toggle="buttons">
+                                <label class="btn mb-1 btn-light active">
+                                    <input type="radio" name="options" id="option1" checked> Active
+                                </label>
+                                <label class="btn mb-1 btn-light">
+                                    <input type="radio" name="options" id="option2"> Radio
+                                </label>
+                                <label class="btn mb-1 btn-light">
+                                    <input type="radio" name="options" id="option3"> Radio
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="btn-group btn-group-toggle mt-2 mt-lg-0" data-bs-toggle="buttons">
+                                <label class="btn mb-1 btn-primary active">
+                                    <input type="radio" name="options" id="genderoption1" checked> <i class="bi bi-wifi"></i> On
+                                </label>
+                                <label class="btn mb-1 btn-primary">
+                                    <input type="radio" name="options" id="genderoption2"> <i class="bi bi-wifi-off"></i> Off
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group btn-group-toggle mt-2" data-bs-toggle="buttons">
+                        <label class="btn mb-1 btn-dark">
+                            <input type="radio" name="options" id="align-left"> <i class="bi bi-align-left"></i>
+                        </label>
+                        <label class="btn mb-1 btn-dark active">
+                            <input type="radio" name="options" id="align-center" checked> <i class="bi bi-align-center"></i>
+                        </label>
+                        <label class="btn mb-1 btn-dark">
+                            <input type="radio" name="options" id="align-right"> <i class="bi bi-align-right"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+ 

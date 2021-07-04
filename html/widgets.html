@@ -1,0 +1,993 @@
+---
+layout: default
+title: Widgets
+customJs:
+- vendor/tinycolor-min.js
+- colors.custom.js
+
+- vendor/d3.min.js
+- vendor/topojson.min.js
+
+- vendor/datamaps.all.min.js
+- vendor/datamaps-zoomto.js
+- datamaps.custom.js
+
+- vendor/gauge.min.js
+
+- vendor/apexcharts.min.js
+- apexcharts.custom.js
+
+- script.js
+
+---
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-lg-6 col-xl-3 mb-4">
+      <div class="card h-100 bg-primary text-white">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-3 text-center">
+              <span>
+                <i class="bi bi-basket3 bi-4x"></i>
+              </span>
+            </div>
+            <div class="col pr-0">
+              <p class="small text-light mb-0">Monthly Sales</p>
+              <span class="h3 mb-0 text-white">$1250</span>
+              <span class="small text-muted">+5.5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-3 text-center">
+              <span>
+                <i class="bi bi-bag-check bi-4x"></i>
+              </span>
+            </div>
+            <div class="col pr-0">
+              <p class="small text-muted mb-0">Orders</p>
+              <span class="h3 mb-0">1,869</span>
+              <span class="small text-success">+16.5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-3 text-center">
+              <span>
+                <i class="bi bi-wallet2 bi-4x"></i>
+              </span>
+            </div>
+            <div class="col">
+              <p class="small text-muted mb-0">Conversion</p>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <span class="h3 me-1 mb-0 text-success"> 86.6% </span>
+                </div>
+                <div class="col-lg-12 col-lg">
+                  <div class="progress progress-sm mt-2" style="height:3px">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 mb-4">
+      <div class="card h-100 bg-secondary-light">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-3 text-center">
+              <span>
+                <i class="bi bi-piggy-bank bi-4x text-secondary"></i>
+              </span>
+            </div>
+            <div class="col">
+              <p class="small text-muted mb-0">Bank: May 21 - Jun 21</p>
+              <span class="h3 mb-0">$180,456.<span class="text-muted">89</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-xl-3 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <span class="h2 mb-0">$1.2K</span>
+              <p class="small text-muted mb-0">Monthly Sales</p>
+              <span class="badge badge-pill bg-success">+15.5%</span>
+            </div>
+            <div class="col-auto">
+              <i class="bi bi-shop bi-4x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <span class="h2 mb-0">345 <i class="bi bi-patch-check-fill text-secondary"></i></span>
+              <p class="small text-muted mb-0">Verify users</p>
+              <span class="badge badge-pill bg-success">+10.5% this week</span>
+            </div>
+            <div class="col-auto">
+              <i class="bi bi-clipboard-data bi-4x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 bg-info-light">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="h2 mb-0">789</div>
+              <p class="small text-muted mb-0">
+                <span class="badge badge-pill bg-info me-2">-1.5%</span>New Customers</p>
+              <span class="text-primary"><i class="bi bi-calendar me-2"></i> May 21 - Jun 21</span>
+            </div>
+            <div class="col-auto">
+              <i class="bi bi-people bi-4x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+              <h4 class="fw-bold">Browser</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="chart-box mb-3">
+            <div id="radarChartWidget"></div>
+          </div>
+          <div class="mx-auto">
+            <div class="row align-items-center my-2">
+              <div class="col-6 col-xl-3 my-3">
+                <span class="small mb-0">Safari</span>
+                <div class="progress my-2" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-3 my-3 text-right">
+                <span>118</span><br />
+                <span class="my-0 text-muted small">+10%</span>
+              </div>
+              <div class="col-6 col-xl-3 my-3">
+                <span class="small mb-0">Chrome</span>
+                <div class="progress my-2" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-3 my-3 text-right">
+                <span>1008</span><br />
+                <span class="my-0 text-muted small">+36%</span>
+              </div>
+              <div class="col-6 col-xl-3 my-3">
+                <span class="mb-0">Opera</span>
+                <div class="progress my-2" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-3 my-3 text-right">
+                <span>67</span><br />
+                <span class="my-0 text-muted small">+1.6%</span>
+              </div>
+              <div class="col-6 col-xl-3 my-3">
+                <span class="mb-0">Edge</span>
+                <div class="progress my-2" style="height: 4px;">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-3 my-3 text-right">
+                <span>186</span><br />
+                <span class="my-0 text-muted small">+118%</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="columnChartWidget" width="300" height="200"></div>
+          </div>
+        </div>
+      </div> 
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="chart-widget mb-2">
+            <div id="radialbar"></div>
+          </div>
+          <div class="row items-align-center">
+            <div class="col-4 text-center">
+              <p class="text-muted mb-1">Cost</p>
+              <h6 class="mb-1">$1,823</h6>
+              <p class="text-muted mb-0">+12%</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="text-muted mb-1">Revenue</p>
+              <h6 class="mb-1">$6,830</h6>
+              <p class="text-muted mb-0">+8%</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="text-muted mb-1">Earning</p>
+              <h6 class="mb-1">$4,830</h6>
+              <p class="text-muted mb-0">+8%</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="col-xl-6 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+              <h4 class="fw-bold">Region</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="map-box" style="position: relative;min-height: 170px; margin:0 auto;">
+                <div id="dataMapUSA"></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row align-items-center mt-2">
+                <div class="col">
+                  <strong>California</strong>
+                  <div class="my-0 text-muted small">San Diego</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+65%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center mt-2">
+                <div class="col">
+                  <strong>Austin</strong>
+                  <div class="my-0 text-muted small">Texas</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+25%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="card mb-4">
+        <div class="card-body py-3">
+          <div class="row align-items-center">
+            <div class="col-2 pr-1">
+              <span class="small bi-check-circle me-1 text-success d-block d-lg-inline"></span>
+              <span class="small text-muted">10/10</span>
+              <div class="progress mt-2" style="height: 4px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col pr-0">
+              <strong>Updated layouts structures</strong>
+              <p class="small text-muted mb-0">Completed a week ago</p>
+            </div>
+            <div class="col-auto px-0">
+              <div class="participants">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="card mb-4">
+        <div class="card-body py-3">
+          <div class="row align-items-center">
+            <div class="col-2 pr-1">
+              <span class="small bi bi-check2-all me-1 text-secondary d-block d-lg-inline"></span>
+              <span class="small text-muted">6/6</span>
+              <div class="progress mt-2" style="height: 4px;">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col pr-0">
+              <strong>Create new plan</strong>
+              <p class="small text-muted mb-0">Open 2 days ago</p>
+            </div>
+            <div class="col-auto px-0">
+              <div class="participants">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+      <div class="card mb-4">
+        <div class="card-body py-3">
+          <div class="row align-items-center">
+            <div class="col-2 pr-1">
+              <span class="small text-warning bi bi-calendar2-check me-1 d-block d-lg-inline"></span>
+              <span class="small text-warning">1/2</span>
+              <div class="progress mt-2" style="height: 4px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col pr-0">
+              <strong>Setup new demo</strong>
+              <p class="small text-muted mb-0">Due in 3 days</p>
+            </div>
+            <div class="col-auto px-0">
+              <div class="participants">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+      <div class="card mb-4">
+        <div class="card-body py-3">
+          <div class="row align-items-center">
+            <div class="col-2 pr-1">
+              <span class="small text-danger bi bi-calendar2-check me-1 d-block d-lg-inline"></span>
+              <span class="small text-danger">1/6</span>
+              <div class="progress mt-2" style="height: 4px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col pr-0">
+              <strong>Create new plan</strong>
+              <p class="small text-danger mb-0">Due 5 days</p>
+            </div>
+            <div class="col-auto px-0">
+              <div class="participants">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg">
+                <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+              <h4 class="fw-bold">Recent users</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="list-group list-group-flush my-n3">
+            <div class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-3 col-lg-2 avatar-sm">
+                  <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+                </div>
+                <div class="col">
+                  <strong>Fusion Backpack</strong>
+                  <div class="my-0 text-muted small">Gear, Bags</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+85%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-3 col-lg-2 avatar-sm">
+                  <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg" alt="..." class="img-fluid rounded-circle">
+                </div>
+                <div class="col">
+                  <strong>Luma hoodies</strong>
+                  <div class="my-0 text-muted small">Jackets, Men</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+75%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-3 col-lg-2 avatar-sm">
+                  <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+                </div>
+                <div class="col">
+                  <strong>Luma shorts</strong>
+                  <div class="my-0 text-muted small">Shorts, Men</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+62%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-3 col-lg-2 avatar-sm">
+                  <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="..." class="img-fluid rounded-circle">
+                </div>
+                <div class="col">
+                  <strong>Brown Trousers</strong>
+                  <div class="my-0 text-muted small">Trousers, Women</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+24%</strong>
+                  <div class="progress mt-2" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-center">
+              <a href="#!" class="avatar avatar-sm">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+              </a>
+            </div>
+            <div class="col">
+              <strong class="mb-1">Remond dubio</strong><span class="dot dot-lg bg-success ml-1"></span>
+              <p class="small text-muted mb-1">Fringilla Ornare Placerat Consulting</p>
+            </div>
+            <div class="col-4 col-lg-auto offset-4 offset-lg-0 my-2">
+              <a href="#!" class="btn btn-sm btn-secondary">Contact</a>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+    <div class="col-xl-3 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+              <h4 class="fw-bold">Tracking</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="chart-box mb-3" style="min-height:180px;">
+            <div id="customAngle"></div>
+          </div> 
+          <div class="row align-items-center my-2">
+            <div class="col">
+              <strong>Paris</strong>
+              <div class="my-0 text-muted small">France</div>
+            </div>
+            <div class="col-auto">
+              <strong>+85%</strong>
+            </div>
+            <div class="col-3">
+              <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center my-2">
+            <div class="col">
+              <strong>Amsterdam</strong>
+              <div class="my-0 text-muted small">Netherlands</div>
+            </div>
+            <div class="col-auto">
+              <strong>+75%</strong>
+            </div>
+            <div class="col-3">
+              <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center my-2">
+            <div class="col">
+              <strong>Venice</strong>
+              <div class="my-0 text-muted small">Italy</div>
+            </div>
+            <div class="col-auto">
+              <strong>+62%</strong>
+            </div>
+            <div class="col-3">
+              <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center my-2">
+            <div class="col">
+              <strong>Barcelona</strong>
+              <div class="my-0 text-muted small">Spain</div>
+            </div>
+            <div class="col-auto">
+              <strong>+24%</strong>
+            </div>
+            <div class="col-3">
+              <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center my-2">
+            <div class="col">
+              <strong>Sydney</strong>
+              <div class="my-0 text-muted small">Australia</div>
+            </div>
+            <div class="col-auto">
+              <strong>+20%</strong>
+            </div>
+            <div class="col-3">
+              <div class="progress" style="height: 4px;">
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div id="lineChartWidget"></div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="chart-widget">
+            <div id="gradientRadial"></div>
+          </div>
+          <div class="row">
+            <div class="col-6 text-center">
+              <p class="text-muted mb-0">Yesterday</p>
+              <h4 class="mb-1">126</h4>
+              <p class="text-muted mb-2">+5.5%</p>
+            </div>
+            <div class="col-6 text-center">
+              <p class="text-muted mb-0">Today</p>
+              <h4 class="mb-1">86</h4>
+              <p class="text-muted mb-2">-5.5%</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+              <h4 class="fw-bold">Recent Files</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="list-group list-group-flush my-n3">
+            <div class="list-group-item">
+              <a href="#!" class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-file-pdf bi-4x text-danger"></i>
+                </div>
+                <div class="col">
+                  <small class="text-primary"><strong>Presentation project</strong></small>
+                  <div class="my-0 text-muted small"><span class="text-muted me-1">1.2M</span><span class="badge badge-pill bg-danger-light text-danger">document.pdf</span></div>
+                </div>
+                <div class="col-auto pe-0">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+            <div class="list-group-item">
+              <a href="#!" class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-file-earmark-excel bi-4x text-success"></i>
+                </div>
+                <div class="col">
+                  <small class="text-primary"><strong>Report 15-06-2021</strong></small>
+                  <div class="my-0 text-muted small"><span class="text-muted me-1">1.7KB</span><span class="badge badge-pill bg-success-light text-success">report_1.xlsx</span></div>
+                </div>
+                <div class="col-auto pe-0">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+            <div class="list-group-item">
+              <a href="#!" class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-file-earmark-excel bi-4x text-success"></i>
+                </div>
+                <div class="col">
+                  <small class="text-primary"><strong>Report 27-06-2021</strong></small>
+                  <div class="my-0 text-muted small"><span class="text-muted me-1">1.2KB</span><span class="badge badge-pill bg-success-light text-success">report_2.xlsx</span></div>
+                </div>
+                <div class="col-auto pe-0">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+            <div class="list-group-item">
+              <a href="#!" class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-file-earmark-word bi-4x text-secondary"></i>
+                </div>
+                <div class="col">
+                  <small class="text-primary"><strong>Management Report</strong></small>
+                  <div class="my-0 text-muted small"><span class="text-muted me-1">1.7KB</span><span class="badge badge-pill bg-secondary-light text-secondary">report_3.docx</span></div>
+                </div>
+                <div class="col-auto pe-0">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+              </a>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-xl-4 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row items-align-center">
+            <div class="col-lg-6 my-4">
+              <p class="mb-0"><strong class="mb-0 text-uppercase text-muted">Earning</strong></p>
+              <h3>$2,562</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-lg-6 my-4 text-center">
+              <div lass="chart-box mx-4">
+                <div id="radialbarWidget"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 border-top pt-3">
+              <p class="mb-1"><strong class="text-muted">Cost</strong></p>
+              <h4 class="mb-0">108</h4>
+              <p class="small text-muted mb-0"><span>37.7% Last week</span></p>
+            </div>
+            <div class="col-lg-6 border-top pt-3">
+              <p class="mb-1"><strong class="text-muted">Revenue</strong></p>
+              <h4 class="mb-0">1168</h4>
+              <p class="small text-muted mb-0"><span>-18.9% Last week</span></p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="col-xl-5 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body text-center">
+          <a href="#!" class="avatar">
+            <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="..." class="avatar-img rounded-circle">
+          </a>
+          <div class="card-text my-2">
+            <strong class="card-title my-0">Nathaly elen </strong>
+            <p class="small text-muted mb-0">San Diego, california, USA</p>
+            <h4 class="fw-bold">Operation Manager</h4>
+            <p class="small"><span class="badge bg-info">California, USA</span></p>
+          </div>
+        </div> 
+        <div class="card-footer">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <small>
+                <i class="bi bi-circle-fill text-success"></i> Online </small>
+            </div>
+            <div class="col-auto">
+              <a href="#!" class="btn btn-sm btn-primary">Contact</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="col-xl-3 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+              <h4 class="fw-bold">Device</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="mb-2">
+            <div id="pieChartWidget"></div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-4 text-center">
+              <div class="circle circle-lg bg-light">
+                <span class="fal fa-monitor fa-2x text-muted"></span>
+              </div>
+              <div class="mt-2">
+                <strong>1086</strong><br />
+                <span class="my-0 text-muted small">+68%</span>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="circle circle-lg bg-light">
+                <span class="fal fa-smartphone fa-2x text-muted"></span>
+              </div>
+              <div class="mt-2">
+                <strong>175</strong><br />
+                <span class="my-0 text-muted small">+18%</span>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="circle circle-lg bg-light">
+                <span class="fal fa-tablet fa-2x text-muted"></span>
+              </div>
+              <div class="mt-2">
+                <strong>126</strong><br />
+                <span class="my-0 text-muted small">-8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="col-xl-8">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between border-bottom pb-3">
+              <h4 class="fw-bold">Notification List</h4>
+              <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+          </div>
+          <div class="list-group list-group-flush my-n3">
+            <div class="list-group-item px-0">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-folder-symlink bi-4x"></i>
+                </div>
+                <div class="col">
+                  <small><strong>Package has uploaded successfull</strong></small>
+                  <div class="my-0 text-muted small">Package is zipped and uploaded</div>
+                </div>
+                <div class="col-auto">
+                  <small>1m ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-app-indicator bi-4x"></i>
+                </div>
+                <div class="col">
+                  <small><strong>Widgets are updated successfull</strong></small>
+                  <div class="my-0 text-muted small">Just create new layout Index, form, table</div>
+                </div>
+                <div class="col-auto">
+                  <small>2m ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-inboxes-fill bi-4x"></i>
+                </div>
+                <div class="col">
+                  <small><strong>Notifications have been sent</strong></small>
+                  <div class="my-0 text-muted small">Fusce dapibus, tellus ac cursus commodo</div>
+                </div>
+                <div class="col-auto">
+                  <small>30m ago</small>
+                </div>
+              </div> 
+            </div>
+            <div class="list-group-item px-0">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <i class="bi bi-link-45deg bi-4x"></i>
+                </div>
+                <div class="col">
+                  <small><strong>Link was attached to menu</strong></small>
+                  <div class="my-0 text-muted small">New layout has been attached to the menu</div>
+                </div>
+                <div class="col-auto">
+                  <small>1h ago</small>
+                </div>
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+    <div class="col-xl-4 col-12 mb-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="d-flex mb-2">
+            <div class="flex-fill pt-2">
+              <p class="mb-0 text-muted">Total</p>
+              <h4 class="mb-0">108</h4>
+              <span class="small text-muted">+37.7%</span>
+            </div>
+            <div class="flex-fill chart-box mt-n2">
+              <div id="barChartWidget"></div>
+            </div>
+          </div> 
+          <div class="row border-top">
+            <div class="col-lg-6 pt-4">
+              <h6 class="mb-0">108 <span class="small text-muted">+37.7%</span></h6>
+              <p class="mb-0 text-muted">Cost</p>
+            </div>
+            <div class="col-lg-6 pt-4">
+              <h6 class="mb-0">1168 <span class="small text-muted">-18.9%</span></h6>
+              <p class="mb-0 text-muted">Revenue</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="col-xl-12 mb-4">
+      <div class="card profile">
+        <div class="card-body my-4">
+          <div class="row align-items-center">
+            <div class="col-lg-3 text-center mb-5">
+              <a href="#!" class="avatar avatar-xl">
+                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+              </a>
+            </div>
+            <div class="col">
+              <div class="row align-items-center">
+                <div class="col-lg-7">
+                  <h4 class="mb-1">Nani Bark</h4>
+                  <p class="small mb-3"><span class="badge badge-dark">New York, USA</span></p>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-lg-7">
+                  <p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit nisl ullamcorper, rutrum metus in, congue lectus. In hac habitasse platea dictumst. Cras urna quam, malesuada vitae risus at, pretium blandit sapien. </p>
+                </div>
+                <div class="col">
+                  <p class="small mb-0 text-muted">Nec Urna Suscipit Ltd</p>
+                  <p class="small mb-0 text-muted">P.O. Box 464, 5975 Eget Avenue</p>
+                  <p class="small mb-0 text-muted">(537) 315-1481</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-lg-7 mb-2">
+                  <span class="small text-muted mb-0">Joined April 10, 2020</span>
+                </div>
+                <div class="col mb-2">
+                  <button type="button" class="btn btn-primary">Message</button>
+                  <button type="button" class="btn btn-secondary">Profile</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    <!-- <div class="col-xl-4 col-12 mb-4">
+      <div class="card h-100 mb-4">
+        <div class="card-body">
+          <p class="mb-0"><strong class="mb-0 text-uppercase text-muted">Today</strong></p>
+          <h3 class="mb-0">$2,562.30</h3>
+          <p class="text-muted">+18.9% Last week</p>
+          
+          <div class="chart-widget p-0">
+            <div id="areaChartWidget"></div>
+          </div>
+
+          <div class="w-70 mx-auto">
+            <div class="row align-items-center mb-2">
+              <div class="col">
+                <p class="mb-0">Direct</p>
+                <span class="my-0 text-muted small">+10%</span>
+              </div>
+              <div class="col-auto text-right">
+                <p class="mb-0">218</p>
+                <span class="dot dot-lg bg-success"></span>
+              </div>
+            </div>
+            <div class="row align-items-center mb-2">
+              <div class="col">
+                <p class="mb-0">Organic Search</p>
+                <span class="my-0 text-muted small">+0.6%</span>
+              </div>
+              <div class="col-auto text-right">
+                <p class="mb-0">1002</p>
+                <span class="dot dot-lg bg-warning"></span>
+              </div>
+            </div>
+            <div class="row align-items-center mb-2">
+              <div class="col">
+                <p class="mb-0">Referral</p>
+                <span class="my-0 text-muted small">+1.6%</span>
+              </div>
+              <div class="col-auto text-right">
+                <p class="mb-0">67</p>
+                <span class="dot dot-lg bg-primary"></span>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col">
+                <p class="mb-0">Social</p>
+                <span class="my-0 text-muted small">+118%</span>
+              </div>
+              <div class="col-auto text-right">
+                <p class="mb-0">386</p>
+                <span class="dot dot-lg bg-secondary"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> -->
+    <!-- <div class="col-xl-4 col-12">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="">
+            <strong class="card-title">Services</strong>
+            <a class="float-end small text-muted" href="#!">View all</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="chart-box">
+                <div id="donutChartWidget"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row align-items-center my-3">
+                <div class="col">
+                  <strong>Cloud Server</strong>
+                  <div class="my-0 text-muted small">Global, Services</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+85%</strong>
+                </div>
+                <div class="col-3">
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center my-3">
+                <div class="col">
+                  <strong>CDN</strong>
+                  <div class="my-0 text-muted small">Global, Services</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+75%</strong>
+                </div>
+                <div class="col-3">
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center my-3">
+                <div class="col">
+                  <strong>Databases</strong>
+                  <div class="my-0 text-muted small">Local, DC</div>
+                </div>
+                <div class="col-auto">
+                  <strong>+62%</strong>
+                </div>
+                <div class="col-3">
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+        </div>
+      </div> 
+    </div> -->
+  </div>
+</div> 

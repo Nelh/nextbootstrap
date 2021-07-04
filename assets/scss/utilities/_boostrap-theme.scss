@@ -1,0 +1,33 @@
+$colors-light: ("primary-light": $primary-light,
+    "secondary-light": $secondary-light,
+    "success-light": $success-light,
+    "warning-light": $warning-light,
+    "danger-light": $danger-light,
+    "info-light": $info-light,
+    "light-light": $light-light,
+    "dark-light": $dark-light,
+    "primary-lighten": $primary-lighten,
+    "secondary-lighten": $secondary-lighten,
+    "success-lighten": $success-lighten,
+    "warning-lighten": $warning-lighten,
+    "danger-lighten": $danger-lighten,
+    "info-lighten": $info-lighten,
+);
+
+
+$theme-colors: ("primary": $default,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+    "info": $info,
+    "light": $light,
+    "dark": $dark);
+
+// scss-docs-start btn-variant-loops
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color} {
+        color: $light !important;
+    }
+}

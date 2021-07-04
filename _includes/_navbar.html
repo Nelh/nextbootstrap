@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand navbar-light m-3 border-radius-15 bg-light">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item my-auto p-0 me-2">
+            <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                <i class="bi bi-list bi-3x text-primary"></i>
+            </a>
+        </li>
+        <li class="nav-item my-auto d-none d-md-block">
+            <a class="nav-link h5 fw-bold m-0 text-primary" href="#!">
+                {% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %} {{ page.title }} {% endif %}
+            </a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item my-auto me-3"> 
+            <a href="#" class="nav-link h5 m-0 text-primary position-relative" role="button" data-bs-toggle="dropdown" aria-bs-haspopup="true" aria-bs-expanded="false"> 
+                <i class="bi bi-bell"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end dropdown-notification mt-3 pb-0 shadow">
+                <h6 class="dropdown-header fw-bold"> Notifications </h6> 
+                <div class="list-group list-group-flush my-n3">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto avatar-sm">
+                          <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col">
+                          <strong>Daniel</strong>
+                          <div class="my-0 text-muted small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                          <span class="small text-muted">3 sec ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto avatar-sm">
+                          <img src="{{ site.baseurl }}/assets/images/profiles/18.jpg" alt="..." class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col">
+                          <strong>John</strong>
+                          <div class="my-0 text-muted small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                          <span class="small text-muted">14 sec ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto avatar-sm">
+                          <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="..." class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col">
+                          <strong>Daniel</strong>
+                          <div class="my-0 text-muted small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                          <span class="small text-muted">1 hour ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto avatar-sm">
+                          <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="..." class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col">
+                          <strong>Chris</strong>
+                          <div class="my-0 text-muted small">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                          <span class="small text-muted">4 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                <a class="dropdown-item text-center fw-bold small text-gray-500 py-3 border-top" href="#">Show All</a>
+            </div>
+        </li>
+        <li class="nav-item my-auto mx-3 d-none d-md-block"> 
+            <a href="#" class="nav-link position-relative btn btn-primary btn-shadow h5 border-radius-15 text-light m-0 p-2 px-3" role="button"> 
+                <i class="bi bi-plus-circle-dotted"></i>
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-secondary border border-light rounded-circle">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#!" class="nav-link avatar-xs">
+                <img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="..." class="img-fluid rounded-circle">
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- New Project -->
+<div id="modalProject" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1" role="dialog"
+    aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="defaultModalLabel">New Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn mb-2 btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn mb-2 btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

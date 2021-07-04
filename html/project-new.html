@@ -1,0 +1,167 @@
+---
+layout: default
+title: Create Project
+---
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-8 col-12 mb-4">
+            <div class="card mb-3 border-5 pt-2 active pb-0 px-3">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h4 class="card-title fw-bold">Project setting</h4>
+                        </div>
+                        <div class="col">
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <p class="card-text text-muted small"> 
+                                    <i class="bi bi-star bi-2x"></i>
+                                    <span class="vl mr-2 ml-0"></span>  Strting date on 1 Nov , 2020
+                                </p>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white px-0 ">
+                    <div class="row">
+                        <div class=" col-md-auto "> 
+                            <a href="#" class="btn btn-link text-muted bg-transparent" data-wow-delay="0.7s">
+                                <i class="bi bi-gear"></i>
+                                <small>SETTINGS</small>
+                            </a> 
+                            <i class="mdi mdi-settings-outline"></i> 
+                            <a href="#" class=" btn-link text-muted">
+                                <i class="bi bi-link"></i>
+                                <small>PROGRAM LINK</small> 
+                            </a> 
+                            <a href="#" class="btn btn-link text-muted">
+                                <i class="bi bi-three-dots"></i>More
+                            </a> 
+                            <span class="vl ml-3"></span> 
+                        </div>
+                        <div class="col-md-auto ">
+                            <div class="participants">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/1.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/4.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/6.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/17.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/14.jpg" alt="participant">
+                                <img src="{{ site.baseurl }}/assets/images/profiles/15.jpg" alt="participant">
+                                <a href="#!" class="ms-2 fw-bold text-primary small"><span>+ 5 more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="fw-bold">Project Information</h4>
+                        <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+                    </div>
+                    <div class="row g-2 mb-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="project name">
+                                <label>Project Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="Company name">
+                                <label>Company Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2 mb-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                                <label>Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" placeholder="Password">
+                                <label>Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="fw-bold">Overview</h4>
+                        <a class="float-end h4 text-muted" href="#!"><i class="bi bi-bookmark-star"></i></a>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="example-textarea" style="height: 100px"></textarea>
+                        <label for="example-textarea">Project Overview</label>
+                    </div>
+                </div> 
+            </div> 
+            
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                        <select class="form-select" id="inputGroupSelect03"
+                            aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="mb-2"><strong>Custom checkboxes</strong></p>
+                    <div class="form-check form-checkbox">
+                        <input type="checkbox" class="form-check-input" id="customCheck1">
+                        <label class="form-check-label" for="customCheck1">Check this first custom
+                            checkbox</label>
+                    </div>
+                    <div class="form-check form-checkbox">
+                        <input type="checkbox" class="form-check-input" id="customCheck2">
+                        <label class="form-check-label" for="customCheck2">Check this secondary custom
+                            checkbox</label>
+                    </div>
+                    <div class="form-check form-checkbox">
+                        <input type="checkbox" class="form-check-input" id="customCheck1-1" disabled checked>
+                        <label class="form-check-label" for="customCheck1">Disabled custom checkbox</label>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary py-2 px-4">Create</button>
+            </div>
+        </div>
+        <div class="col-xl-4 col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="fw-bold">Budget</h4>
+                        <a class="float-end h4 text-muted" href="#!"><i class="bi bi-piggy-bank"></i></a>
+                    </div>
+                    <div class="mb-3"> 
+                        <sup class="text-muted">$</sup> 
+                        <span class="h3 fw-bold">2500</span> <span class="text-muted">/ hour</span> 
+                    </div>
+                    <div> 
+                        <input type="range" class="form-range" min="1000" max="100000" step="2500" id="customRange3">
+                        <div class="d-flex justify-content-between"> <small class="text-muted">$1,000</small> 
+                            <small class="text-muted">$100,000</small> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

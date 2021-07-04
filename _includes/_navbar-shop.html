@@ -1,0 +1,93 @@
+
+<nav class="navbar navbar-dark bg-primary navbar-expand p-1">
+    <div class="container">
+        <ul class="navbar-nav d-none d-md-flex mr-auto">
+            <li class="nav-item">
+                <a class="nav-link small text-uppercase fw-bold" href="#">Free Delivery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link small text-uppercase fw-bold" href="#">Return & Orders</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav d-flex align-items-center">
+            <a href="{{ site.baseurl }}/html/login.html" class="btn btn-outline-light p-1 px-4 me-2">Login</a>
+            <a href="{{ site.baseurl }}/html/register.html" class="btn btn-outline-light p-1 px-4">Sign up</a>
+        </ul>
+    </div>
+</nav>
+<nav class="bg-white">
+    <div class="container">
+        <div class="row p-2 pt-3 pb-3 d-flex align-items-center">
+            <div class="col-md-2 col-12 text-center text-md-left mb-3">
+                <a href="{{ site.baseurl }}/html/index.html">
+                    <img src="{{ site.baseurl }}/assets/images/next-full.png" width="120">
+                </a>
+            </div>
+            <div class="col-md-7 col-12 mb-3">
+                <div class="card card-body m-0 p-1">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent border-0"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-0" placeholder="Search for any product...">
+                        <span class="input-group-text border-0 bg-transparent">
+                        <button class="btn btn-primary btn-shadow py-2 px-3">Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mb-3">
+                <div class="d-flex justify-content-center">
+                    <a href="{{ site.baseurl }}/html/cart.html" class="d-flex flex-row align-items-center text-primary me-3">
+                        <span class="bg-primary text-light shop-bag">
+                            <i class="bi bi-bag"></i>
+                        </span>
+                        <div class="d-flex flex-column ms-2">
+                            <span class="qty">1 Product</span>
+                            <span class="fw-bold">$430.99</span>
+                        </div>
+                    </a>
+
+                    <a href="{{ site.baseurl }}/html/whishlist.html" class="d-flex flex-row align-items-center text-primary">
+                        <span class="bg-danger-light text-light shop-bag">
+                            <i class="bi bi-heart text-danger"></i>
+                        </span>
+                        <div class="d-flex flex-column ms-2">
+                            <span class="qty">Whishlist</span>
+                            <span class="fw-bold">$0.00</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-2"> 
+    <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-bs-controls="navbars" aria-bs-expanded="false" aria-bs-label="Toggle navigation" class="navbar-toggler"> 
+        <div class="hamburger d-flex d-lg-none">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div>
+    </button>
+    <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-primary fw-bold">Today's Deals</a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-primary fw-bold">Women's fashion</a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-primary fw-bold">Men's fashion</a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-primary fw-bold">Home & Kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-primary fw-bold">Sports and Outdoors</a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="nav-link text-danger fw-bold">Gift Cards</a>
+            </li>
+        </ul>
+    </div>
+</nav>
