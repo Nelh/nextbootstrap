@@ -1,7 +1,7 @@
 {
-  "name": "@nelh/next-lib",
-  "version": "1.0.3",
-  "description": "UI kit template for backend Application built wth bootstrap 5",
+  "name": "@nelh/next-bootstrap",
+  "version": "1.0.1",
+  "description": "High End UI Kit",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev gulp",
@@ -41,17 +41,5 @@
     "npm": ">=6.10.0",
     "node": ">=12.7.0"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "author": "Nelh Amstrong <nelhamstrong9@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nelh/Next-sidebar.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Nelh/Next-sidebar/issues"
-  },
-  "homepage": "https://github.com/Nelh/Next-sidebar#readme"
+  "homepage": "https://nextbootstrap.netlify.app"
 }

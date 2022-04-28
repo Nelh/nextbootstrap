@@ -65,7 +65,7 @@ function browserSyncServe() {
 // Gulp watch files
 function watch() {
   gulp.watch(paths.styles.src, style);
-  gulp.watch(['*.html','_layouts/*','_includes/*','html/**/*','assets/**/*'],gulp.series(jekyllBuild, reload));
+  gulp.watch(['*.html','_layouts/*','_includes/*','html/**/*','assets/**/*'], gulp.series(jekyllBuild, reload));
 }
 /**
  * Rebuild Jekyll & do page reload
